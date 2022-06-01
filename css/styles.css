@@ -11507,3 +11507,20 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.figma{
+  width:300px; 
+  height:450px;
+}
+
+@media (min-width: 992px) {
+  .figma{
+    width:800px; 
+    height:450px;
+  }
+}
+/* 
+.figma{
+  width: 800px;
+  height: 450px;
+} */
