@@ -1,0 +1,88 @@
+<!-- 
+    index.html
+    Karan Singh Sandhu
+    09-07-2022  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Canada</title>
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="http://ejd.songho.ca/syst24444/Logger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body >
+
+    <h1>COVID-19 Canada</h1>
+    <!-- Main Flex -->
+    <div class="container">
+        <!-- Flex Item 1, Sub Flex -->
+        <div id="item" class="maincol">
+            Province:
+            <select id="comboProv"></select>
+            
+            Week: &nbsp;&nbsp;<span id="date">2022-06-11</span>&nbsp;
+            <img id="left" src="img/arrow_left.svg" alt="left" data-name="left" class="buttonblock">
+            <img id="right" src="img/arrow_right.svg" alt="right" data-name="right" class="buttonblock">
+            
+            <br>
+            <br>
+            Confirmed Cases
+            <div id="flexnum">
+                <div id="num1" class="numcol">
+                    Weekly<br>
+                    <span id="Weekly">0</span>
+                </div>
+                <div id="num2" class="numcol">
+                    Total
+                    <br>
+                    <span id="Total">0</span>
+                </div>
+            </div>
+            <br>
+            <span class="src">Source: <a href="https://health-infobase.canada.ca">https://health-infobase.canada.ca</a></span>
+        </div>
+        <!-- Line Graphs -->
+        <!-- Flex Item 2 -->
+        <div id="item2" class="maincol">
+            <canvas id="chart">
+            </canvas>
+        </div>
+        <!-- Flex Item 3 -->
+        <div id="item3" class="maincol">
+            <canvas id="chart2">
+            </canvas>
+        </div>
+        <br>
+    </div>
+    
+    <!-- Table -->
+    <div class="fixedTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Week* </th>
+                    <th>Weekly Confirmed</th>
+                    <th>Total Confirmed</th>
+                    <th>Weekly Deaths</th>
+                    <th>Total Deaths</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <br>
+    <span class="src">* : The weekly information are updated on every Friday</span>
+</body>
+
+</html>

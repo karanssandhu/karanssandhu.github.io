@@ -1,0 +1,162 @@
+/* 
+    Karan Singh Sandhu
+    2022-06-16 
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px auto;
+    text-align: center
+}
+
+#comboProv{
+    width:100%;
+    font-size:1.2em;
+    margin-bottom:10px
+}
+.maincol{
+    flex:1 0 300px;
+    min-height:300px
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px
+}
+
+#item {
+    flex: 1 0 250px;
+    font-size:1.2em;
+}
+
+div{
+    display: block;
+}
+
+#item2 {
+    width: auto;
+    flex: 3 0 300px;
+    overflow: hidden;
+}
+
+#item3 {
+    width: auto;
+    /* height: 488px; */
+    flex: 3 0 300px;
+    overflow: hidden;
+}
+
+#Weekly {
+    color:#147efb
+}
+
+
+#Total {
+    color:#fc3d39
+}
+
+#Weekly, #Total {
+    display:inline-block;
+    padding: 0.5em;
+    font-weight: 700;
+}
+
+#date{
+    font-size:1.2em
+}
+
+#flexnum{
+    display:flex;
+}
+
+.numcol{
+    flex:1 0 auto;
+    font-size:1.8em;
+    text-align:center;
+}
+
+.fixedTable{
+    overflow:auto;
+    height:300px;
+    margin:10px;
+    font-size:calc(.4em + .6vw)
+}
+.fixedTable table{
+    width:100%;
+    table-layout:fixed;
+    border-collapse:collapse;
+    border:none
+}
+.fixedTable thead th{
+    position:sticky;
+    top:0;
+    background-color:#cf9;
+    z-index:1
+}
+.fixedTable td,.fixedTable th{
+    border:none;
+    box-shadow:inset 0 0 0 1px #ccc;
+    text-align:center
+}
+
+tr:nth-child(2n){
+    background-color:#f0f0f0
+}
+
+.src{
+    font-style: italic;
+    color: #888;
+    font-size: .8em;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    color: #888;
+    font-size: .8em;
+}
+.buttonblock{
+    display:inline-block;
+    line-height:100%;
+    width:1.7em;
+    margin-right:20px;
+    vertical-align:middle;
+    border:1px solid #0000;
+    cursor:pointer;
+    -webkit-user-select:none;
+    user-select:none
+}
+.buttonblock:hover{
+    border:1px solid #888
+}
+.buttonblock:active{
+    border:1px solid #444
+}
+
+
+/* .dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.dark-mode .fixedTable thead th{
+   
+    background-color:darkgreen;
+}
+
+.dark-mode .fixedTable td,.fixedTable th{
+    border:none;
+    box-shadow:inset 0 0 0 1px brown;
+    text-align:center
+}
+
+.dark-mode  tr:nth-child(2n){
+    background-color: grey;
+} */
